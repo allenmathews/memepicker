@@ -1,6 +1,9 @@
-import { catsData } from '/data.js'
+import { catsData } from '/Users/allenmathews/Development/Code/scrimba/memepicker/js/data'
 
 const emotionRadios = document.getElementById('emotion-radios')
+emotionRadios.addEventListener('change', function(e) {
+    console.log(e.target.id)
+})
 
 function getEmotionsArray(cats) {
     const emotionsArray = []
